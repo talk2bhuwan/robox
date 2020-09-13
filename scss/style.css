@@ -182,7 +182,7 @@ a:focus {
   display: inherit !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hidden-md {
     display: none;
   }
@@ -352,7 +352,7 @@ header .user-action span {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header .user-action span {
     margin-left: 40px;
   }
@@ -396,7 +396,7 @@ header .user-action .dropdown-menu {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar-toggler {
     color: #3041A7 !important;
     display: block;
@@ -414,7 +414,7 @@ header .user-action .dropdown-menu {
   margin: 0 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar .navbar-nav li {
     margin: 0;
   }
@@ -432,7 +432,7 @@ header .user-action .dropdown-menu {
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar .navbar-nav li a {
     padding: 10px 0;
   }
@@ -452,7 +452,7 @@ header .user-action .dropdown-menu {
   background-color: #3041A7;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar .navbar-nav li a.active:after {
     width: 100%;
     left: 0;
@@ -464,9 +464,10 @@ header .user-action .dropdown-menu {
 .funds-section {
   padding-left: 30px;
   min-height: calc(100vh - 220px);
+  padding-left: 0;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .funds-section {
     padding-left: 0;
   }
@@ -485,7 +486,7 @@ header .user-action .dropdown-menu {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .funds-data-wrapper {
     padding-left: 0;
   }
@@ -688,7 +689,7 @@ header .user-action .dropdown-menu {
   border-bottom: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .funds-data-wrapper .content-row-wrapper .accordion .mutual-funds-form {
     display: none;
   }
@@ -722,7 +723,7 @@ header .user-action .dropdown-menu {
   border: 1px solid #FFFFFF;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .funds-data-wrapper .content-row-wrapper .content-row.active:before {
     display: none;
   }

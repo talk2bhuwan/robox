@@ -3,9 +3,13 @@
 .funds-section{
     padding-left: 30px;
     min-height: calc(100vh - 220px);
-    @media(max-width:$break-sm){
+    @media (max-width: $break-md){
         padding-left: 0;
     }
+
+    @media (max-width: 768px){
+
+    }padding-left: 0;
 }
 
 .funds-data-wrapper{
@@ -14,7 +18,7 @@
     @media(max-width:$break-sm){
         flex-wrap: wrap;
     }
-    @media(max-width:$break-md){
+    @media(max-width:$break-sm){
         padding-left:0;
     }
 
