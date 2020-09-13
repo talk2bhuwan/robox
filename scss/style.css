@@ -1,0 +1,887 @@
+/**************************** TYPOGRAPHY *********************************/
+html {
+  font-size: 1rem;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+  font-family: "robotoregular", Helvetica, sans-serif;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+ul,
+ol {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  line-height: 1;
+}
+
+input[type="text"]::-ms-clear {
+  display: none;
+}
+
+::-ms-clear {
+  display: none;
+}
+
+::-webkit-search-decoration,
+::-webkit-search-cancel-button,
+::-webkit-search-results-button,
+::-webkit-search-results-decoration {
+  display: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+button,
+a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover,
+a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: inherit;
+  text-decoration: none;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+}
+
+@font-face {
+  font-family: "robotoregular";
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotomedium";
+  src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotobold";
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto_condensedbold";
+  src: url("../fonts/robotocondensed-bold-webfont.woff2") format("woff2"), url("../fonts/robotocondensed-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotoitalic";
+  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper {
+  padding: 0 25px;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    padding: 0 80px;
+  }
+}
+
+/****************************Button start *********************************/
+.btn {
+  font-family: "robotomedium", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #98A2B080;
+  padding: 11px 50px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.btn.btn-outline {
+  background: none;
+  color: #3041A7;
+  border-color: #3041A7;
+}
+
+.btn.btn-primary {
+  background: #3041A7;
+  color: #FFFFFF;
+  border-color: #3041A7;
+}
+
+/****************************Button end *********************************/
+.d-inherit {
+  display: inherit !important;
+}
+
+@media (max-width: 768px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+/****************************Section heading start *********************************/
+.section-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 28px 0 18px 0;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@media (max-width: 576px) {
+  .section-heading {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.section-heading h2 {
+  font-family: "robotobold", Helvetica, sans-serif;
+  font-size: 20px;
+  color: #05377B;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.section-heading p {
+  font-size: 14px;
+  color: #63748D;
+  line-height: 19px;
+}
+
+@media (max-width: 576px) {
+  .section-heading a {
+    margin-top: 20px;
+  }
+}
+
+/****************************Section heading end *********************************/
+/****************************Custom checkbox start*********************************/
+.checkbox-wrapper input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  cursor: pointer;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + em:before {
+  border-color: #3041A7;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + em:after {
+  display: block;
+}
+
+.checkbox-wrapper span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: #98A2B0;
+  line-height: 19px;
+  margin-bottom: 5px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.checkbox-wrapper span em {
+  display: inline-block;
+}
+
+.checkbox-wrapper span em:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #B3BCC9;
+  border-radius: 1px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.checkbox-wrapper span em:after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  color: #3041A7;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: none;
+}
+
+/****************************Custom checkbox end*********************************/
+/****************************accordion css start*********************************/
+.collapsed .fa-chevron-down,
+.fa-chevron-right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.collapsed .fa-chevron-right,
+.fa-chevron-down {
+  font-size: 12px;
+  color: #98A2B0;
+  display: inline-block;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/****************************accordion css end*********************************/
+/**************************** header stat *********************************/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 22px 0;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .user-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .user-action span {
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header .user-action span {
+    margin-left: 40px;
+  }
+}
+
+header .user-action span.user-name {
+  width: 36px;
+  height: 36px;
+  background: #DBEBFF;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+header .user-action span.user-name em {
+  font-family: "robotomedium", Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 29px;
+  color: #3041A7;
+}
+
+header .user-action .dropdown-menu {
+  border: 0;
+  -webkit-transform: translate(-50%, 75%) !important;
+          transform: translate(-50%, 75%) !important;
+  -webkit-box-shadow: 0px 0px 10px rgba(48, 65, 167, 0.2);
+          box-shadow: 0px 0px 10px rgba(48, 65, 167, 0.2);
+}
+
+/**************************** header ends *********************************/
+/**************************** navigation start *********************************/
+.navbar-toggler {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    color: #3041A7 !important;
+    display: block;
+    padding-left: 0;
+    font-size: 24px;
+  }
+}
+
+.navbar {
+  padding: 0;
+  border-bottom: 2px solid #3041A7;
+}
+
+.navbar .navbar-nav li {
+  margin: 0 30px;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-nav li {
+    margin: 0;
+  }
+}
+
+.navbar .navbar-nav li a {
+  font-family: "robotobold", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #63748D;
+  line-height: 21px;
+  letter-spacing: 0.58px;
+  text-transform: uppercase;
+  padding: 18px 0;
+  display: inline-block;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-nav li a {
+    padding: 10px 0;
+  }
+}
+
+.navbar .navbar-nav li a.active {
+  color: #3041A7;
+}
+
+.navbar .navbar-nav li a.active:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: 4px;
+  background-color: #3041A7;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-nav li a.active:after {
+    width: 100%;
+    left: 0;
+  }
+}
+
+/**************************** navigation end *********************************/
+/**************************** Funds section *********************************/
+.funds-section {
+  padding-left: 30px;
+  min-height: calc(100vh - 220px);
+}
+
+@media (max-width: 576px) {
+  .funds-section {
+    padding-left: 0;
+  }
+}
+
+.funds-data-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  .funds-data-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .funds-data-wrapper {
+    padding-left: 0;
+  }
+}
+
+.funds-data-wrapper .row {
+  width: 100%;
+  margin: 0;
+}
+
+.funds-data-wrapper .form-wrap {
+  padding-right: 0;
+  padding-left: 25px;
+}
+
+.funds-data-wrapper .filter {
+  background: #FCFCFC;
+  padding-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .funds-data-wrapper .filter {
+    max-height: 200px;
+    overflow: auto;
+    padding-bottom: 30px;
+  }
+}
+
+.funds-data-wrapper .filter h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 28px;
+  font-family: "robotobold", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #05377B;
+  line-height: 19px;
+}
+
+.funds-data-wrapper .filter h4 span {
+  font-family: "robotoregular", Helvetica, sans-serif;
+  color: #3041A7;
+  cursor: pointer;
+}
+
+.funds-data-wrapper .filter .accordion .card {
+  background: none;
+  border: 0;
+}
+
+.funds-data-wrapper .filter .accordion .card [aria-expanded="false"] {
+  margin-bottom: 20px !important;
+}
+
+.funds-data-wrapper .filter .accordion .card .card-header {
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.funds-data-wrapper .filter .accordion .card .card-header h5 {
+  font-family: "robotomedium", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #63748D;
+  line-height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.funds-data-wrapper .filter .accordion .card .card-body {
+  padding: 13px 0;
+}
+
+.funds-data-wrapper .content .search-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .funds-data-wrapper .content .search-section {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.funds-data-wrapper .content .search-section .form-group {
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+
+.funds-data-wrapper .content .search-section .form-group.search {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  margin-right: 20px;
+}
+
+@media (max-width: 576px) {
+  .funds-data-wrapper .content .search-section .form-group.search {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+.funds-data-wrapper .content .search-section .form-group.search i.fas {
+  font-size: 12px;
+  color: #98A2B0;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.funds-data-wrapper .content .search-section .form-group.sort {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+@media (max-width: 576px) {
+  .funds-data-wrapper .content .search-section .form-group.sort {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.funds-data-wrapper .content .search-section .form-group.sort i.fas {
+  font-size: 12px;
+  color: #98A2B0;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.funds-data-wrapper .content .search-section input {
+  padding-left: 36px;
+}
+
+.funds-data-wrapper .content .search-section .form-control {
+  background: #FCFCFC;
+  border: 0;
+  border-radius: 0;
+  font-size: 14px;
+  color: #98A2B0;
+  height: 40px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.funds-data-wrapper .content .search-section .form-control::-webkit-input-placeholder {
+  color: #98A2B0;
+}
+
+.funds-data-wrapper .content .search-section .form-control:-ms-input-placeholder {
+  color: #98A2B0;
+}
+
+.funds-data-wrapper .content .search-section .form-control::-ms-input-placeholder {
+  color: #98A2B0;
+}
+
+.funds-data-wrapper .content .search-section .form-control::placeholder {
+  color: #98A2B0;
+}
+
+.funds-data-wrapper .content .search-section .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.funds-data-wrapper .content-row-wrapper {
+  border: 1px solid #DBEBFF;
+}
+
+.funds-data-wrapper .content-row-wrapper .accordion .card {
+  border: 0;
+}
+
+.funds-data-wrapper .content-row-wrapper .accordion .card:last-child .content-row {
+  border-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .funds-data-wrapper .content-row-wrapper .accordion .mutual-funds-form {
+    display: none;
+  }
+}
+
+.funds-data-wrapper .content-row-wrapper .content-row {
+  background: #FFFFFF;
+  border-bottom: 1px solid #DBEBFF;
+  padding: 16px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.funds-data-wrapper .content-row-wrapper .content-row:last-child {
+  border: 0;
+}
+
+.funds-data-wrapper .content-row-wrapper .content-row.active:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: calc(100% + 2px);
+  height: 100%;
+  border: 1px solid #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .funds-data-wrapper .content-row-wrapper .content-row.active:before {
+    display: none;
+  }
+}
+
+.funds-data-wrapper .content-row-wrapper .content-row img {
+  margin-right: 28px;
+}
+
+.funds-data-wrapper .content-row-wrapper .content-row h4 {
+  font-family: "robotomedium", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #203442;
+  line-height: 28px;
+}
+
+.funds-data-wrapper .content-row-wrapper .content-row span {
+  font-size: 12px;
+  color: #98A2B0;
+  margin-right: 20px;
+}
+
+.funds-data-wrapper .content-row-wrapper .content-row span strong {
+  color: #63748D;
+}
+
+/**************************** Fund section end *********************************/
+/**************************** Mutual funds form *********************************/
+.mutual-funds-form {
+  padding: 20px;
+  background: #FCFCFC;
+}
+
+.mutual-funds-form .form-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mutual-funds-form .form-header img {
+  margin-right: 10px;
+}
+
+.mutual-funds-form .form-header h4 {
+  font-family: "robotomedium", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #203442;
+  line-height: 19px;
+}
+
+.mutual-funds-form .form-header span {
+  font-size: 12px;
+  color: #63748D;
+  margin-right: 18px;
+}
+
+.mutual-funds-form form {
+  margin: 23px 0;
+}
+
+.mutual-funds-form form .form-group {
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.mutual-funds-form form .form-group .form-control {
+  border: 1px solid #EFEFEF;
+  border-radius: 2px;
+  font-size: 16px;
+  color: #63748D;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.mutual-funds-form form .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mutual-funds-form form .form-group label {
+  font-family: "robotomedium", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #63748D;
+  line-height: 19px;
+}
+
+.mutual-funds-form form .form-group .field-note {
+  font-size: 11px;
+  color: #98A2B0;
+  line-height: 15px;
+}
+
+.mutual-funds-form form .form-group.inr-field input {
+  padding-left: 22px;
+}
+
+.mutual-funds-form form .form-group.inr-field i.fas {
+  position: absolute;
+  top: 44px;
+  left: 10px;
+  font-size: 12px;
+  color: #98A2B0;
+}
+
+.mutual-funds-form form .form-group.date-field {
+  width: 126px;
+}
+
+.mutual-funds-form form .form-group.date-field i.fas {
+  position: absolute;
+  top: 44px;
+  right: 10px;
+  font-size: 12px;
+  color: #98A2B0;
+}
+
+.mutual-funds-form form .form-group.date-field label {
+  white-space: nowrap;
+}
+
+/****************************Mutual funds form end *********************************/
+footer {
+  background: #FCFCFC;
+  padding: 30px 0 30px 30px;
+}
+
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  font-size: 16px;
+  color: #63748D;
+  line-height: 21px;
+}
+
+@media (max-width: 576px) {
+  footer p {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+footer p img {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,182 @@
+
+
+.wrapper{
+    padding: 0 25px;
+    @media(min-width:$break-lg){
+      padding: 0 80px;
+    }
+    }
+  
+/****************************Button start *********************************/
+.btn{
+    font-family: $font-midium;
+    font-size:$font-14;
+    line-height: 19px;
+    text-transform: uppercase;
+    color:$light-gray;
+    padding:11px 50px;
+    border:1px solid transparent;
+    border-radius:2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+    &:focus{
+        box-shadow: none;
+    }
+
+    img{
+        width:20px;
+        margin-left:10px;
+    }
+
+    &.btn-outline{
+        background:none;
+        color: $theme-blue;
+        border-color:  $theme-blue;
+    }
+
+    &.btn-primary{
+        background:$theme-blue;
+        color: $white;
+        border-color:  $theme-blue;
+    }
+}
+
+/****************************Button end *********************************/
+
+
+.d-inherit{
+    display: inherit!important;
+}
+
+.hidden-md{
+    @media(max-width:$break-md){
+        display:none;
+    }
+}
+
+/****************************Section heading start *********************************/
+.section-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:28px 0 18px 0;
+    margin-left: -15px;
+    margin-right: -15px;
+        @media(max-width:$break-sm){
+        flex-wrap: wrap;
+      }
+
+   
+
+    h2{
+        font-family: $font-bold;
+        font-size:$font-20;
+        color: $navy-blue-dark;
+        line-height: 26px;
+        margin-bottom:10px;
+        
+    }
+
+    p{
+        font-size:$font-14;
+        color: $navy-blue-light;
+        line-height:19px;
+    }
+
+    a{
+        @media(max-width:$break-sm){
+            margin-top: 20px;
+        }
+    }
+}
+
+/****************************Section heading end *********************************/
+
+/****************************Custom checkbox start*********************************/
+.checkbox-wrapper{
+    input[type="checkbox"]{
+        opacity: 0;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        left: 0;
+        cursor: pointer;
+        &:checked + em:before{
+            border-color:$theme-blue;
+            
+        }
+
+        &:checked + em:after{ 
+            display: block;
+        }
+
+    }
+
+    span{
+        display: flex;
+        align-items: center;
+        font-size:$font-14;
+        color: $dark-gray;
+        line-height: 19px;
+        margin-bottom:5px;
+        padding-left: 30px;
+        position: relative;
+
+        em{display: inline-block;      
+        &:before{
+            content: '';
+            position: absolute;
+            top:50%;
+            left:0;
+            width:16px;
+            height:16px;
+            border: 1px solid $light-gray1;
+            border-radius: 1px;
+            transform: translateY(-50%);
+        }
+
+        &:after{
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-size:$font-10;
+            font-weight: 600; 
+            position: absolute;
+            top: 50%;
+            left: 2px;
+            color: $theme-blue;
+            transform: translateY(-50%);
+            display: none;   
+          
+        }
+        }
+
+    }
+}
+
+/****************************Custom checkbox end*********************************/
+
+
+
+
+/****************************accordion css start*********************************/
+ 
+.collapsed .fa-chevron-down,
+.fa-chevron-right {
+    transform: rotate(180deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.collapsed .fa-chevron-right,
+.fa-chevron-down {
+    font-size:$font-12;
+    color:  $dark-gray;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+  
+}
+
+/****************************accordion css end*********************************/

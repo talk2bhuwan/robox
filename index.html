@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title> ROBOX - Bhuwan Chandra Papanai</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!--  CSS Files -->
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+      <link rel="stylesheet" href="fontawesome/css/all.min.css">
+      <link rel="stylesheet" href="scss/style.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <!--header start-->
+         <header>
+            <div class="logo">
+               <!-- menu toggle button for mobile -->
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-list"></i> 
+                  </button>
+                   <!-- menu toggle button for mobile end-->
+              <a href="#"><img src="images/logo.svg" alt="brand-logo"></a> 
+            </div>
+            <div class="user-action">
+               <div class="dropdown">
+                  <a  href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/notification-icon.svg"></a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown01">
+                     <a class="dropdown-item" href="#">Action</a>
+                  </div>
+               </div>
+               <div class="dropdown">
+                  <a  href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="user-name"> <em>A</em></span></a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown01">
+                     <a class="dropdown-item" href="#">Action</a>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!--header end-->
+         <!--Navigation start-->
+         <nav class="navbar navbar-expand-md">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+               <ul class="navbar-nav mr-auto">
+                  <li>
+                     <a href="#"> Dashboard</a>
+                  </li>
+                  <li>
+                     <a href="#">Goals</a>
+                  </li>
+                  <li>
+                     <a href="#" class="active">Funds</a>
+                  </li>
+                  <li>
+                     <a href="#">Collections</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <!--Navigation end-->
+
+         <!--funds section start-->
+         <section class="funds-section">
+            <!--section heading-->
+            <div class="section-heading">
+               <div class="col-md-8">
+                  <h2>Create your own portfolio</h2>
+                  <p>Choose funds based on your comfort and understanding. And create your own portfolio.</p>
+               </div>
+               <div class="col-md-4">
+                  <a href="#" class="btn btn-outline">See all invested Funds <img src="images/arrow-right-icon.png" alt="Arrow Icon"></a>
+               </div>
+            </div>
+            <!--section heading end-->
+
+            <div class="funds-data-wrapper">
+               <div class="row">
+
+                  <!--filter section start-->
+                  <div class="filter col-md-2 col-sm-3">
+                     <h4>Filter <span>Clear all</span></h4>
+                     <div class="accordion" id="accordionExample">
+                        <div class="card">
+                           <div class="card-header" id="headingOne">
+                              <h5 data-toggle="collapse" data-target="#fund-category" aria-expanded="true" aria-controls="fund-category">
+                                 Fund Category  <i class="fas fa-chevron-down"></i>
+                              </h5>
+                           </div>
+                           <div id="fund-category" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+                                 <div class="checkbox-wrapper">
+                                    <span><input type="checkbox" checked> All<em></em></span>
+                                    <span><input type="checkbox"> Gold<em></em></span>
+                                    <span><input type="checkbox"> Large Cap<em></em></span>
+                                    <span><input type="checkbox"> Mid Cap<em></em></span>
+                                    <span><input type="checkbox"> Small Cap<em></em></span>
+                                    <span><input type="checkbox"> Multi Cap<em></em></span>
+                                    <span><input type="checkbox"> Balanced<em></em></span>
+                                    <span><input type="checkbox"> Liquid<em></em></span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <div class="card-header" id="headingOne">
+                              <h5 data-toggle="collapse" data-target="#rating" aria-expanded="true" aria-controls="rating">
+                                 Rating  <i class="fas fa-chevron-down"></i>
+                              </h5>
+                           </div>
+                           <div id="rating" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+                                 <div class="checkbox-wrapper">
+                                    <span><input type="checkbox" checked> All<em></em></span>
+                                    <span><input type="checkbox"> 1 Star<em></em></span>
+                                    <span><input type="checkbox"> 2 Star<em></em></span>
+                                    <span><input type="checkbox"> 3 Star<em></em></span>
+                                    <span><input type="checkbox"> 4 Star<em></em></span>
+                                    <span><input type="checkbox"> 5 Star<em></em></span>
+                                    <span><input type="checkbox"> Unrated<em></em></span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--filter section  end -->
+
+                  <!--mutual funds content start-->
+                  <div class="col-md-6 col-sm-9">
+                     <div class="content">
+                        <div class="search-section">
+                           <div class="form-group search">
+                              <input class="form-control" type="text" placeholder="Search all mutual funds">
+                              <i class="fas fa-search"></i>
+                           </div>
+                           <div class="form-group sort">
+                              <select class="form-control">
+                                 <option value="0" selected>Sort</option>
+                              </select>
+                              <i class="fas fa-chevron-down"></i>
+                           </div>
+                        </div>
+                        <div class="content-row-wrapper">
+                           <div class="accordion" id="accordion_funds">
+                              <!-- card 1 start-->
+                              <div class="card">
+                                 <div class="content-row" data-toggle="collapse" data-target="#fund1" aria-expanded="true" aria-controls="rating">
+                                    <img src="images/mirae_groww.svg" alt="mirae groww">
+                                    <div>
+                                       <h4>Mirae Asset Emerging Bluechip Fund Direct Growth</h4>
+                                       <span>Return: <strong>18.32%</strong></span>
+                                       <span>Fund Size: <strong>6000.01 Cr</strong></span>
+                                       <span>Aggressive</span>
+                                       <span>Debt</span>
+                                    </div>
+                                 </div>
+                                 <div id="fund1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion_funds">
+                                    <div class="mutual-funds-form ">
+                                       <form>
+                                          <div class="form-group inr-field">
+                                             <label>Lumpsum Amount</label>
+                                             <input class="form-control" type="text">
+                                             <i class="fas fa-rupee-sign"></i>
+                                             <small class="field-note">(Minimum of ₹1,00,000; Multiples of ₹1)</small>
+                                          </div>
+                                          <div class="form-group inr-field">
+                                             <label>SIP Amount</label>
+                                             <input class="form-control" type="text">
+                                             <i class="fas fa-rupee-sign"></i>
+                                             <small class="field-note">(Minimum of ₹500; Multiples of ₹100)</small>
+                                          </div>
+                                          <div class="form-group date-field">
+                                             <label>SIP Date <small class="field-note"> (Every month)</small></label>
+                                             <select class="form-control">
+                                                <option value="0" selected>12th</option>
+                                             </select>
+                                             <i class="fas fa-chevron-down"></i>
+                                          </div>
+                                          <div class="form-group">
+                                             <button type="button" class="btn btn-primary btn-block d-inherit">ADD</button>
+                                          </div>
+                                          <div class="form-group">
+                                             <button type="button" class="btn btn-outline btn-block d-inherit">Cancel</button>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                               <!-- card 1 end-->
+
+                                <!-- card 2 start-->
+                              <div class="card">
+                                 <div class="content-row" data-toggle="collapse" data-target="#fund2" aria-expanded="true" aria-controls="rating">
+                                    <img src="images/nippon_groww.png" alt="nippon groww">
+                                    <div>
+                                       <h4>Nippon India Gilt Securities Fund Direct Growth</h4>
+                                       <span>Return: <strong>18.32%</strong></span>
+                                       <span>Fund Size: <strong>6000.01 Cr</strong></span>
+                                       <span>Moderately Aggressive</span>
+                                       <span>Debt</span>
+                                    </div>
+                                 </div>
+                                 <div id="fund2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion_funds">
+                                    <div class="mutual-funds-form ">
+                                       <form>
+                                          <div class="form-group inr-field">
+                                             <label>Lumpsum Amount</label>
+                                             <input class="form-control" type="text">
+                                             <i class="fas fa-rupee-sign"></i>
+                                             <small class="field-note">(Minimum of ₹1,00,000; Multiples of ₹1)</small>
+                                          </div>
+                                          <div class="form-group inr-field">
+                                             <label>SIP Amount</label>
+                                             <input class="form-control" type="text">
+                                             <i class="fas fa-rupee-sign"></i>
+                                             <small class="field-note">(Minimum of ₹500; Multiples of ₹100)</small>
+                                          </div>
+                                          <div class="form-group date-field">
+                                             <label>SIP Date <small class="field-note"> (Every month)</small></label>
+                                             <select class="form-control">
+                                                <option value="0" selected>12th</option>
+                                             </select>
+                                             <i class="fas fa-chevron-down"></i>
+                                          </div>
+                                          <div class="form-group">
+                                             <button type="button" class="btn btn-primary btn-block d-inherit">ADD</button>
+                                          </div>
+                                          <div class="form-group">
+                                             <button type="button" class="btn btn-outline btn-block d-inherit">Cancel</button>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                               <!-- card 2 end-->
+
+                                <!-- card 3 start-->
+                              <div class="card">
+                                 <div class="content-row active" data-toggle="collapse" data-target="#fund3" aria-expanded="true" aria-controls="rating">
+                                    <img src="images/axis-blue-chip.png" alt="Axis Bluechip ">
+                                    <div>
+                                       <h4>Axis Bluechip Fund Direct Plan Growth</h4>
+                                       <span>Return: <strong>18.32%</strong></span>
+                                       <span>Fund Size: <strong>6000.01 Cr</strong></span>
+                                       <span>Moderately Aggressive</span>
+                                       <span>Debt</span>
+                                    </div>
+                                 </div>
+                                 <div id="fund3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion_funds">
+                                    <div class="mutual-funds-form ">
+                                       <form>
+                                          <div class="form-group inr-field">
+                                             <label>Lumpsum Amount</label>
+                                             <input class="form-control" type="text">
+                                             <i class="fas fa-rupee-sign"></i>
+                                             <small class="field-note">(Minimum of ₹1,00,000; Multiples of ₹1)</small>
+                                          </div>
+                                          <div class="form-group inr-field">
+                                             <label>SIP Amount</label>
+                                             <input class="form-control" type="text">
+                                             <i class="fas fa-rupee-sign"></i>
+                                             <small class="field-note">(Minimum of ₹500; Multiples of ₹100)</small>
+                                          </div>
+                                          <div class="form-group date-field">
+                                             <label>SIP Date <small class="field-note"> (Every month)</small></label>
+                                             <select class="form-control">
+                                                <option value="0" selected>12th</option>
+                                             </select>
+                                             <i class="fas fa-chevron-down"></i>
+                                          </div>
+                                          <div class="form-group">
+                                             <button type="button" class="btn btn-primary btn-block d-inherit">ADD</button>
+                                          </div>
+                                          <div class="form-group">
+                                             <button type="button" class="btn btn-outline btn-block d-inherit">Cancel</button>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                               <!-- card 3 end-->
+
+                                <!-- card 4 start-->
+                              <div class="card">
+                                 <div class="content-row" data-toggle="collapse" data-target="#fund4" aria-expanded="true" aria-controls="rating">
+                                    <img src="images/mirae_groww.svg" alt="mirae groww">
+                                    <div>
+                                       <h4>Mirae Asset Emerging Bluechip Fund Direct Growth</h4>
+                                       <span>Return: <strong>18.32%</strong></span>
+                                       <span>Fund Size: <strong>6000.01 Cr</strong></span>
+                                       <span>Aggressive</span>
+                                       <span>Debt</span>
+                                    </div>
+                                 </div>
+                                 <div id="fund4" class="collapse" aria-labelledby="headingOne" data-parent="#accordion_funds">
+                                    <div class="mutual-funds-form ">
+                                       <form>
+                                          <div class="form-group inr-field">
+                                             <label>Lumpsum Amount</label>
+                                             <input class="form-control" type="text">
+                                             <i class="fas fa-rupee-sign"></i>
+                                             <small class="field-note">(Minimum of ₹1,00,000; Multiples of ₹1)</small>
+                                          </div>
+                                          <div class="form-group inr-field">
+                                             <label>SIP Amount</label>
+                                             <input class="form-control" type="text">
+                                             <i class="fas fa-rupee-sign"></i>
+                                             <small class="field-note">(Minimum of ₹500; Multiples of ₹100)</small>
+                                          </div>
+                                          <div class="form-group date-field">
+                                             <label>SIP Date <small class="field-note"> (Every month)</small></label>
+                                             <select class="form-control">
+                                                <option value="0" selected>12th</option>
+                                             </select>
+                                             <i class="fas fa-chevron-down"></i>
+                                          </div>
+                                          <div class="form-group">
+                                             <button type="button" class="btn btn-primary btn-block d-inherit">ADD</button>
+                                          </div>
+                                          <div class="form-group">
+                                             <button type="button" class="btn btn-outline btn-block d-inherit">Cancel</button>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- card 4 end-->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--mutual funds content end-->
+
+                  <!--mutual funds content form start-->
+                  <div class="col-md-4 form-wrap hidden-md">
+                     <div class="mutual-funds-form ">
+                        <div class="form-header">
+                           <img src="images/axis-blue-chip.png" alt="Axis Bluechip ">
+                           <div>
+                              <h4>Axis Bluechip Fund Direct Plan Growth</h4>
+                              <span>Debt</span>
+                              <span>Moderately Aggressive</span>
+                           </div>
+                        </div>
+                        <!--form start-->
+                        <form>
+                           <div class="form-group inr-field">
+                              <label>Lumpsum Amount</label>
+                              <input class="form-control" type="text">
+                              <i class="fas fa-rupee-sign"></i>
+                              <small class="field-note">(Minimum of ₹1,00,000; Multiples of ₹1)</small>
+                           </div>
+                           <div class="form-group inr-field">
+                              <label>SIP Amount</label>
+                              <input class="form-control" type="text">
+                              <i class="fas fa-rupee-sign"></i>
+                              <small class="field-note">(Minimum of ₹500; Multiples of ₹100)</small>
+                           </div>
+                           <div class="form-group date-field">
+                              <label>SIP Date <small class="field-note"> (Every month)</small></label>
+                              <select class="form-control">
+                                 <option value="0" selected>12th</option>
+                              </select>
+                              <i class="fas fa-chevron-down"></i>
+                           </div>
+                           <div class="form-group">
+                              <button type="button" class="btn btn-primary btn-block d-inherit">ADD</button>
+                           </div>
+                           <div class="form-group">
+                              <button type="button" class="btn btn-outline btn-block d-inherit">Cancel</button>
+                           </div>
+                        </form>
+                        <!--form end-->
+                     </div>
+                  </div>
+                  <!--mutual funds content form end-->
+               </div>
+            </div>
+         </section>
+         <!--funds section end-->
+      </div>
+
+      <!--footer start-->
+      <footer>
+         <div class="wrapper">
+               <p>©Copyright 2020-2021</p>
+               <p>Powered by <img src="images/logo-small.svg" alt="Brand Logo"></p>
+         </div>
+      </footer>
+       <!--footer end-->
+   
+      <!--Jquery library-->
+      <script src="js/jquery.min.js"></script>
+      <!--Bootstrap Jquery-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>  
+      <script src="bootstrap/js/bootstrap.js"></script>
+   </body>
+   </body>
+</html>

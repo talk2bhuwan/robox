@@ -1,0 +1,333 @@
+/**************************** Funds section *********************************/
+
+.funds-section{
+    padding-left: 30px;
+    min-height: calc(100vh - 220px);
+    @media(max-width:$break-sm){
+        padding-left: 0;
+    }
+}
+
+.funds-data-wrapper{
+   
+    display: flex;
+    @media(max-width:$break-sm){
+        flex-wrap: wrap;
+    }
+    @media(max-width:$break-md){
+        padding-left:0;
+    }
+
+    .row{
+        width:100%;
+        margin: 0;
+        
+    }
+
+    .form-wrap{
+        padding-right:0;
+        padding-left:25px;
+    }
+    .filter{
+       background:  $off-white;
+        padding-top: 10px;
+        @media(max-width:$break-sm){
+           
+            max-height:200px;
+            overflow: auto;
+            padding-bottom:30px;
+        }
+
+     
+        h4{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom:28px;
+            font-family:$font-bold;
+            font-size:$font-14;
+            color: $navy-blue-dark;
+            line-height:19px;
+
+            span{
+                font-family:  $font-regular;
+                color:$theme-blue;
+                cursor: pointer;
+
+            }
+    
+        }
+        .accordion{
+            .card{background:none;
+                border:0;
+                & [aria-expanded="false"] {
+                    margin-bottom:20px!important;
+                   
+                }
+                .card-header{
+                    padding:0;
+                    background:none;
+                    border:0;
+                    cursor: pointer;
+
+                    h5{ font-family:$font-midium;
+                        font-size:$font-14;
+                        color: $navy-blue-light;
+                        line-height: 19px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+
+                .card-body{
+                    padding: 13px 0;
+                }
+            }
+        }
+    }
+
+    .content{
+    
+        .search-section{
+            display: flex;
+            margin-bottom:20px;
+            @media(max-width:$break-sm){
+                flex-wrap: wrap;
+            }
+
+            .form-group{
+                margin:0;
+                width:100%;
+                position: relative;
+
+                &.search{
+                    flex-basis: 60%;
+                    margin-right:20px;
+                    @media(max-width:$break-sm){
+                        flex-basis: 100%;
+                        margin-bottom: 5px;
+                    }
+                    i.fas{
+                        font-size:$font-12;
+                        color: $dark-gray;
+                        position: absolute;
+                        top: 50%;
+                        left: 10px;
+                        transform: translateY(-50%); 
+                    }
+                    
+                }
+                &.sort{
+                    flex-basis: 40%;
+                    @media(max-width:$break-sm){
+                        flex-basis: 100%;
+                    }
+                    i.fas{
+                        font-size:$font-12;
+                        color: $dark-gray;
+                        position: absolute;
+                        top: 50%;
+                        right: 20px;
+                        transform: translateY(-50%); 
+                    }
+                    
+                }
+            }
+            input{
+                padding-left:36px;
+
+            }
+            .form-control{
+                background:$off-white;
+                border:0;
+                border-radius: 0;
+                font-size:$font-14;
+                color:  $dark-gray;
+                height:40px;
+                appearance: none;
+                &::placeholder{
+                    color:  $dark-gray;
+                }
+
+                &:focus{
+                    box-shadow: none;
+                }
+
+               
+            }
+        }
+    }
+
+    
+    .content-row-wrapper{
+        border:1px solid $light-blue;
+        .accordion{
+           
+            .card{
+                border:0;
+
+                &:last-child{
+                   .content-row{
+                     
+                           border-bottom:0;
+                      
+                   } 
+                }
+            }
+            .mutual-funds-form{
+                @media(min-width:$break-md){
+                    display: none;
+               }
+                            }
+            }
+          
+        .content-row{
+            background:$white;
+            border-bottom:1px solid $light-blue;
+            padding:16px 20px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            &:last-child{
+                border:0;
+            }
+
+            &.active{
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top:0;
+                    left:-1px;
+                    width: calc(100% + 2px);
+                    height:100%;
+                    border: 1px solid $white;
+                    
+                    @media(max-width:$break-md){
+                        display: none;
+                    }
+                }
+            }
+
+            img{
+                margin-right:28px;
+            }
+           h4{
+               font-family: $font-midium;
+               font-size:$font-14;
+               color:$navy-blue;
+               line-height:28px;
+           } 
+           span{
+               font-size: $font-12;
+               color: $dark-gray;
+               margin-right:20px;
+
+               strong{
+                   color: $navy-blue-light;
+               }
+           }
+        }
+    }
+}
+
+/**************************** Fund section end *********************************/
+
+
+/**************************** Mutual funds form *********************************/
+
+.mutual-funds-form{
+    padding:20px;
+    background:  $off-white;
+  
+    .form-header{
+        display: flex;
+        align-items: flex-start;
+
+        img{
+            margin-right:10px;
+        }
+
+        h4{
+            font-family:  $font-midium;
+            font-size: $font-14;
+            color: $navy-blue;
+            line-height: 19px;
+        }
+
+        span{
+            font-size: $font-12;
+            color: $navy-blue-light;
+            margin-right:18px;
+        }
+    }
+
+    form{
+        margin:23px 0;
+       .form-group{
+           margin-bottom:18px;
+           position: relative;
+           .form-control{
+            border:1px solid  $off-white1;
+            border-radius:2px;
+            font-size: $font-16;
+            color: $navy-blue-light;
+            appearance: none;
+            &:focus{
+                box-shadow:none;
+            }
+           }
+           
+           label{
+               font-family:  $font-midium;
+               font-size:$font-14;
+               color:  $navy-blue-light;
+               line-height: 19px;
+           }
+
+           .field-note{
+               font-size:$font-11;
+               color:  $dark-gray;
+               line-height:15px;
+           }
+
+           &.inr-field{
+
+            input{
+              padding-left:22px;   
+            }
+
+            i.fas{
+                position: absolute;
+                top:44px;
+                left:10px;
+                font-size:$font-12;
+                color: $dark-gray;
+            }
+           
+           }
+
+           &.date-field{
+               width:126px;
+
+               i.fas{
+                position: absolute;
+                top:44px;
+                right:10px;
+                font-size:$font-12;
+                color: $dark-gray;
+            }
+
+            label{
+                white-space: nowrap;
+            }
+           }
+       }
+    }
+}
+
+/****************************Mutual funds form end *********************************/
+
+
+

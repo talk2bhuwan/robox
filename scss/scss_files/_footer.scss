@@ -1,0 +1,31 @@
+footer{
+    background: $off-white;
+    padding:30px 0 30px 30px;
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p{
+        font-size: $font-16;
+        color: $navy-blue-light;
+        line-height: 21px;
+        @media(max-width:$break-sm){
+            text-align: center;
+            margin-bottom: 10px;
+            width:100%;
+        }
+
+        img{
+            margin-left: 10px;
+        }
+    }
+    
+}
+
+
+
+  
+  

@@ -1,0 +1,109 @@
+
+/**************************** header stat *********************************/
+header{
+  display: flex;
+  justify-content: space-between;
+  padding:22px 0;
+  .logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.user-action{
+  display: flex;
+  align-items: center;
+  span{
+    margin-left:50px;
+    cursor: pointer;
+    @media(max-width:$break-md){
+      margin-left:40px;
+    }
+    &.user-name{
+      width: 36px;
+    height: 36px;
+    background: $light-blue;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+      em{
+      font-family:$font-midium;
+      font-style: normal;
+      font-size:$font-22;
+      line-height: 29px;
+      color: $theme-blue;
+      }
+      
+    }
+  }
+
+  .dropdown-menu{
+    border:0;
+    transform: translate(-50%, 75%)!important;
+    box-shadow: 0px 0px 10px rgba($color: $theme-blue, $alpha: 0.2);
+  }
+}
+}
+
+/**************************** header ends *********************************/
+
+/**************************** navigation start *********************************/
+
+.navbar-toggler{
+  display: none;
+  @media(max-width:$break-md){
+  color: $theme-blue!important;
+  display: block;
+  padding-left:0;
+  font-size:$font-24;
+}
+}
+.navbar{
+  padding: 0;
+  border-bottom:2px solid  $theme-blue;
+  
+ 
+  .navbar-nav{
+    li{
+      margin:0 30px;
+      @media(max-width:$break-md){
+        margin:0;
+      }
+     
+      a{font-family:  $font-bold;
+        font-size:$font-16;
+        color: $navy-blue-light;
+        line-height: 21px;
+        letter-spacing: 0.58px;
+        text-transform: uppercase;
+        padding: 18px 0;
+        display: inline-block;
+        position: relative;
+        @media(max-width:$break-md){
+          padding: 10px 0;
+        }
+
+        &.active{
+          color:  $theme-blue;
+
+          &:after{
+            content: '';
+            position: absolute;
+            bottom:0;
+            left: -10px;
+            width: calc(100% + 20px);
+            height:4px;
+            background-color: $theme-blue;
+            @media(max-width:$break-md){
+              width:100%;
+              left:0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**************************** navigation end *********************************/
