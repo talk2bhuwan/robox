@@ -216,6 +216,9 @@
 
             img{
                 margin-right:28px;
+                @media(max-width:$break-sm){
+                    width:90px;
+                }
             }
            h4{
                font-family: $font-midium;

@@ -733,6 +733,12 @@ header .user-action .dropdown-menu {
   margin-right: 28px;
 }
 
+@media (max-width: 576px) {
+  .funds-data-wrapper .content-row-wrapper .content-row img {
+    width: 90px;
+  }
+}
+
 .funds-data-wrapper .content-row-wrapper .content-row h4 {
   font-family: "robotomedium", Helvetica, sans-serif;
   font-size: 14px;
