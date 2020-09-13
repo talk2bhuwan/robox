@@ -464,7 +464,6 @@ header .user-action .dropdown-menu {
 .funds-section {
   padding-left: 30px;
   min-height: calc(100vh - 220px);
-  padding-left: 0;
 }
 
 @media (max-width: 767px) {
